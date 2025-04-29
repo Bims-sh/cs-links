@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    padding: 0.4rem 0.75rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease-in-out 0.05s, color 0.2s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+    min-width: 0;
+}
+
+.link-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+     transition-delay: 0s, 0s;
+}
+
+.link-text {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.link-text::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 0px;
+    right: 0;
+    background: currentColor;
+    transition: width 0.3s ease 0.05s;
+    -webkit-transition: width 0.3s ease 0.05s;
+}
+
+.link-item:hover .link-text::after {
+    width: 100%;
+    left: 0;
+    right: auto;
+    transition-delay: 0.1s;
+}
+
+.link-skins { color: #60a5fa; }
+.link-trackers { color: #4ade80; }
+.link-platforms { color: #facc15; }
+.link-tools { color: #a78bfa; }
+
+.link-item.link-skins:hover { color: #93c5fd; }
+.link-item.link-trackers:hover { color: #86efac; }
+.link-item.link-platforms:hover { color: #fcd34d; }
+.link-item.link-tools:hover { color: #c4b5fd; }
+
+.favicon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.6rem;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.github-link {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    color: #4b5563;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.github-link:hover {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+.github-link svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    flex-shrink: 0;
+}
+
+.github-text {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    max-width: 0;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: max-width 0.4s ease-out, opacity 0.3s ease-out 0.1s, transform 0.4s ease-out;
+}
+
+.github-link:hover .github-text {
+    max-width: 150px;
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0s, 0.1s, 0s;
+}
