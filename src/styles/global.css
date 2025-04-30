@@ -48,14 +48,16 @@ body {
 }
 
 .link-skins { color: #60a5fa; }
-.link-trackers { color: #4ade80; }
-.link-platforms { color: #facc15; }
-.link-tools { color: #a78bfa; }
+.link-trackers { color: #a78bfa; }
+.link-platforms { color: #4ade80; }
+.link-tools { color: #facc15; }
+.link-other { color: #f6e05e; }
 
 .link-item.link-skins:hover { color: #93c5fd; }
-.link-item.link-trackers:hover { color: #86efac; }
-.link-item.link-platforms:hover { color: #fcd34d; }
-.link-item.link-tools:hover { color: #c4b5fd; }
+.link-item.link-trackers:hover { color: #c4b5fd; }
+.link-item.link-platforms:hover { color: #86efac; }
+.link-item.link-tools:hover { color: #fcd34d; }
+.link-item.link-other:hover { color: #f9e68a; }
 
 .favicon {
     width: 20px;
