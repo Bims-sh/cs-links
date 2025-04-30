@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import linksData from "../data/links.json";
+
+function getDomain(url: string): string {
+	try {
+		const fullUrl =
+			url.startsWith("http://") || url.startsWith("https://")
+				? url
+				: `https://${url}`;
+		const hostname = new URL(fullUrl).hostname;
+		return hostname.replace(/^www\./, "");
+	} catch (e) {
+		console.error("Invalid URL:", url, e);
+		return "";
+	}
+}
+---
+
+<Layout title="CS2 Useful Links">
+	<div
+		class="bg-gray-800 p-8 sm:p-10 rounded-xl shadow-lg shadow-inner border border-gray-700 w-full max-w-2xl"
+	>
+		{
+			linksData.categories.map((category, index) => (
+				<div
+					class={
+						index < linksData.categories.length - 1 ? "mb-8" : ""
+					}
+				>
+					{" "}
+					<h2
+						class={`text-xl sm:text-2xl font-semibold mb-4 ${category.headingColor} border-b-2 border-gray-600 pb-2`}
+					>
+						{category.title}
+					</h2>
+					<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
+						{category.links.sort((a, b) => a.name.localeCompare(b.name)).map((link) => {
+							const domain = getDomain(link.url);
+							const faviconUrl = `https://www.google.com/s2/favicons?sz=32&domain_url=${domain}`
+							return (
+								<a
+									href={link.url}
+									target="_blank"
+									rel="noopener noreferrer"
+									class={`link-item ${category.cssClass}`}
+								>
+									<img
+										src={faviconUrl}
+										alt=""
+										class="favicon"
+										loading="lazy"
+										onerror="this.src='https://www.google.com/s2/favicons?sz=32&domain_url=null'; this.onerror=null;"
+									/>
+									<span class="link-text">{link.name}</span>
+								</a>
+							);
+						})}
+					</div>
+				</div>
+			))
+		}
+	</div>
+</Layout>

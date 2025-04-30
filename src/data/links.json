@@ -1,0 +1,92 @@
+{
+    "categories": [
+        {
+            "title": "Skins",
+            "cssClass": "link-skins",
+            "headingColor": "text-blue-400",
+            "links": [
+                {
+                    "name": "CS2 Inspects",
+                    "url": "https://cs2inspects.com/"
+                },
+                {
+                    "name": "CSFloat",
+                    "url": "https://csfloat.com/search"
+                },
+                {
+                    "name": "Inspect Tools",
+                    "url": "https://www.inspect.tools"
+                },
+                {
+                    "name": "CSInspect",
+                    "url": "https://www.csinspect.com/craft"
+                }
+            ]
+        },
+        {
+            "title": "Trackers & Stats",
+            "cssClass": "link-trackers",
+            "headingColor": "text-green-400",
+            "links": [
+                {
+                    "name": "CSStats",
+                    "url": "https://csstats.gg/"
+                },
+                {
+                    "name": "Faceit Analyser",
+                    "url": "https://faceitanalyser.com/"
+                },
+                {
+                    "name": "Faceit Finder",
+                    "url": "https://faceitfinder.com/"
+                },
+                {
+                    "name": "Faceit Tracker",
+                    "url": "https://faceittracker.net/"
+                },
+                {
+                    "name": "Leetify",
+                    "url": "https://leetify.com/home/"
+                }
+            ]
+        },
+        {
+            "title": "Matchmaking Platforms",
+            "cssClass": "link-platforms",
+            "headingColor": "text-orange-400",
+            "links": [
+                {
+                    "name": "FACEIT",
+                    "url": "https://www.faceit.com/"
+                },
+                {
+                    "name": "Renown",
+                    "url": "https://renown.gg/"
+                }
+            ]
+        },
+        {
+            "title": "Tools & Training",
+            "cssClass": "link-tools",
+            "headingColor": "text-purple-400",
+            "links": [
+                {
+                    "name": "CS2Browser",
+                    "url": "https://cs2browser.com/"
+                },
+                {
+                    "name": "HLTV",
+                    "url": "https://www.hltv.org/"
+                },
+                {
+                    "name": "Refrag",
+                    "url": "https://refrag.gg/"
+                },
+                {
+                    "name": "CSNADES",
+                    "url": "https://csnades.gg"
+                }
+            ]
+        }
+    ]
+}
