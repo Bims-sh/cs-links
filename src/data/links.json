@@ -26,7 +26,7 @@
         {
             "title": "Trackers & Stats",
             "cssClass": "link-trackers",
-            "headingColor": "text-green-400",
+            "headingColor": "text-purple-400",
             "links": [
                 {
                     "name": "CSStats",
@@ -53,7 +53,7 @@
         {
             "title": "Matchmaking Platforms",
             "cssClass": "link-platforms",
-            "headingColor": "text-orange-400",
+            "headingColor": "text-green-400",
             "links": [
                 {
                     "name": "FACEIT",
@@ -68,7 +68,7 @@
         {
             "title": "Tools & Training",
             "cssClass": "link-tools",
-            "headingColor": "text-purple-400",
+            "headingColor": "text-orange-400",
             "links": [
                 {
                     "name": "CS2Browser",
@@ -89,6 +89,21 @@
                 {
                     "name": "Allstar",
                     "url": "https://allstar.gg/"
+                }
+            ]
+        },
+        {
+            "title": "Other (non-CS)",
+            "cssClass": "link-other",
+            "headingColor": "text-yellow-400",
+            "links": [
+                {
+                    "name": "Translate",
+                    "url": "https://translate.google.com"
+                },
+                {
+                    "name": "Google",
+                    "url": "https://google.com"
                 }
             ]
         }
