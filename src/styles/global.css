@@ -48,16 +48,16 @@ body {
 }
 
 .link-skins { color: #60a5fa; }
-.link-trackers { color: #a78bfa; }
-.link-platforms { color: #4ade80; }
-.link-tools { color: #facc15; }
-.link-other { color: #f6e05e; }
+.link-trackers { color: #C084FC; }
+.link-platforms { color: #4ADE80; }
+.link-tools { color: #FB923C; }
+.link-other { color: #FACC15; }
 
-.link-item.link-skins:hover { color: #93c5fd; }
-.link-item.link-trackers:hover { color: #c4b5fd; }
-.link-item.link-platforms:hover { color: #86efac; }
-.link-item.link-tools:hover { color: #fcd34d; }
-.link-item.link-other:hover { color: #f9e68a; }
+.link-item.link-skins:hover { color: #93C5FD; }
+.link-item.link-trackers:hover { color: #D8B4FE; }
+.link-item.link-platforms:hover { color: #86EFAC; }
+.link-item.link-tools:hover { color: #FDBA74; }
+.link-item.link-other:hover { color: #FDE047; }
 
 .favicon {
     width: 20px;
