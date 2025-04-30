@@ -1,0 +1,39 @@
+name: Suggest a new CS Website/Tool
+description: Propose adding a new useful website or tool to the list.
+title: "[SUGGESTION] Add Website: " # User fills in the rest
+labels: [enhancement, suggestion]
+body:
+  - type: input
+    id: website-name
+    attributes:
+      label: Website Name
+      description: What is the name of the website/tool you are suggesting?
+      placeholder: e.g., HLTV
+    validations:
+      required: true
+  - type: input
+    id: website-url
+    attributes:
+      label: Website URL
+      description: Please provide the full URL.
+      placeholder: https://www.hltv.org/
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested Category
+      description: Which category does this best fit into?
+      options:
+        - Skins
+        - Trackers & Stats
+        - Matchmaking Platforms
+        - Tools & Training
+        - Other (Specify below)
+    validations:
+      required: true
+  - type: textarea
+    id: other-category
+    attributes:
+      label: Other Category / Additional Context
+      description: If you selected "Other" above, please specify the category. You can also add any other context here.
