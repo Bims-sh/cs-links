@@ -29,6 +29,10 @@
             "headingColor": "text-purple-400",
             "links": [
                 {
+                    "name": "Csstat",
+                    "url": "https://csst.at/"
+                }
+                {
                     "name": "CSStats",
                     "url": "https://csstats.gg/"
                 },
