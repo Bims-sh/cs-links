@@ -106,6 +106,10 @@
             "headingColor": "text-yellow-400",
             "links": [
                 {
+                    "name": "Steam (Your Profile)",
+                    "url": "https://steamcommunity.com/my"
+                },
+                {
                     "name": "Translate",
                     "url": "https://translate.google.com"
                 },
